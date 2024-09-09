@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Page -->
+    <div class="container" id="welcome">
+        <div class="message-box">
+            <h1>Welcome to DINO Airdrop!</h1>
+            <p>
+                Attention!! Our goal in creating this game is not entertainment, and for various reasons, we haven't included many options. We have made a significant part of it non-free to attract trusted individuals. We just want to find our friends to join our airdrop. We have set restrictions in the game to turn each of your clicks into a token, and when the project ends, we will present all your tokens to you.
+            </p>
+            <button id="startGameBtn">Got it, let's go!</button>
+        </div>
+    </div>
+
+    <!-- Game Page -->
+    <div class="container" id="game">
+        <h1>DINO Airdrop Game</h1>
+        <div id="timer">00:00:00</div>
+        <div class="score">Score: <span id="score">0.000</span></div>
+        <button id="connectWalletBtn">Connect Wallet</button>
+        <button id="openUpgradeBtn">Upgrade</button>
+        <button id="openMissionBtn">Mission</button>
+        <button id="startTimerBtn">Start Timer</button>
+        <button id="stopTimerBtn">Stop Timer</button>
+        <button id="inviteFriendsBtn">Invite Friends</button>
+    </div>
+
+    <!-- Wallet Page -->
+    <div class="container" id="wallet">
+        <div class="back-button" onclick="goBack('game')">←</div>
+        <h1>D.COIN</h1>
+        <button id="connectWalletBtn">Connect Wallet</button>
+        <div id="wallet-address"></div>
+    </div>
+
+    <!-- Upgrade Page -->
+    <div class="container" id="upgrade">
+        <div class="back-button" onclick="goBack('game')">←</div>
+        <div class="upgrade-box">
+            <p>Upgrade Clicks for 1 TEN COIN 💎</p>
+            <button onclick="redirectToTON()">Transfer TEN COIN</button>
+            <button onclick="upgrade()">Upgrade</button>
+        </div>
+    </div>
+
+    <!-- Mission Page -->
+    <div class="container" id="mission">
+        <div class="back-button" onclick="goBack('game')">←</div>
+        <div class="mission-box">
+            <p>Join our Telegram Channel to receive 1000 tokens</p>
+            <button onclick="joinTelegram()">Join Channel</button>
+        </div>
+    </div>
+
+    <!-- لینک به فایل CSS -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- لینک به فایل JS -->
+<script src="js/scripts.js" defer></script>
+
+</body>
+</html>
